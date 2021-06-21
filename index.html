@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <title>Unit Conveter</title>
+  <body>
+    <label>Feet</label>
+    <input
+      id="inputFeet"
+      type="number"
+      oninput="LengthConverter(this.value)"
+      onchange="LengthConverter(this.value)"
+    />
+
+    <p>Meters: <span id="outputMeters"></span></p>
+
+    <p>
+      <label>Inches</label>
+      <input
+        id="inputInches"
+        type="number"
+        placeholder="Inches"
+        oninput="LengthConverter(this.value)"
+        onchange="LengthConverter(this.value)"
+      />
+    </p>
+    <p>Meters: <span id="outputMeters"></span></p>
+
+    <p>
+      <label>Yards</label>
+      <input
+        id="inputYards"
+        type="number"
+        placeholder="Yards"
+        oninput="LengthConverter(this.value)"
+        onchange="LengthConverter(this.value)"
+      />
+    </p>
+    <p>Meters: <span id="outputMeters"></span></p>
+
+    <script>
+      function LengthConverter(valNum) {
+        document.getElementById("outputMeters").innerHTML = valNum / 3.2808;
+      }
+    </script>
+
+    <script>
+      function LengthConverter(valNum) {
+        document.getElementById("outputMeters").innerHTML = valNum / 39.37;
+      }
+    </script>
+    <script>
+      function LengthConverter(valNum) {
+        document.getElementById("outputMeters").innerHTML = valNum / 1.0936;
+      }
+    </script>
+  </body>
+</html>
